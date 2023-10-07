@@ -257,10 +257,10 @@ nav .nav-menu .page-link:active {
   display: flex;
   flex-wrap: wrap;
   gap: 72px 24px;
+  justify-content: center;
 }
 
 .advantages.section .adv-list .adv-list-item {
-  margin: 0 auto;
   min-width: 288px;
 }
 
@@ -301,12 +301,13 @@ nav .nav-menu .page-link:active {
 .team-cards-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px 24px;
 }
 
 .team.section .team-cards-list .member-card {
   min-width: 264px;
-  margin: 0 auto;
+
   border-radius: 0 0 4px 4px;
 
   background-color: #ffffff;
@@ -467,6 +468,7 @@ nav .nav-menu .page-link:active {
 }
 
 .logo-cont .item-text {
+  margin: 0 auto;
   align-self: flex-start;
 }
 
