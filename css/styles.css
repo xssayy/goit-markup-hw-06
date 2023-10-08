@@ -249,7 +249,7 @@ nav .nav-menu .page-link:active {
   text-align: center;
 }
 
-.introduction-section .order-service-button {
+.order-service-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -283,19 +283,6 @@ nav .nav-menu .page-link:active {
 
 .advantages.section .adv-list .adv-list-item {
   min-width: 288px;
-}
-
-.adv-item-icon-cont {
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  padding: 24px 100px;
-  margin-bottom: 8px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
 }
 
 .adv-list-item .item-title {
@@ -474,7 +461,7 @@ nav .nav-menu .page-link:active {
 .footer .container {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: 72px 24px;
 }
 
 .footer.section .logo-cont {
@@ -487,6 +474,7 @@ nav .nav-menu .page-link:active {
   display: inline-block;
   margin-right: 0;
   margin-bottom: 16px;
+  padding: 0;
 }
 
 .logo-cont .item-text {
@@ -553,7 +541,7 @@ nav .nav-menu .page-link:active {
 .subscribe-form-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
   gap: 16px;
 }
@@ -913,5 +901,139 @@ nav .nav-menu .page-link:active {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  .company-contacts .contacts-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .introduction-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-section-img/tablet-verison-1st-section-bg.jpg);
+    padding: 112px 0;
+  }
+
+  .introduction-section .page-title {
+    font-size: 56px;
+  }
+
+  .adv-list-item {
+    max-width: 356px;
+  }
+
+  .project-card {
+    max-width: 356px;
+  }
+
+  .footer.section .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer.section .logo-cont {
+    align-items: flex-start;
+  }
+
+  .footer.section .social-media-footer-cont {
+    align-items: flex-start;
+  }
+
+  .subscribe-form-container {
+    align-items: flex-start;
+  }
+
+  .subscribe-form-container .subscribe-form {
+    flex-direction: row;
+  }
+
+  .order-service-button {
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+
+  .company-contacts .contacts-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .contacts-menu .contact {
+    font-size: 16px;
+  }
+
+  .introduction-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-section-img/1st-section-bg.jpg);
+
+    padding: 188px 0;
+  }
+
+  .order-service-button {
+    margin-top: 48px;
+  }
+
+  .advantages.section .adv-list {
+    flex-wrap: nowrap;
+  }
+
+  .advantages.section .adv-list .adv-item-icon-cont {
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    padding: 24px 100px;
+    margin: 0 0 8px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+
+    position: static;
+    width: 264px;
+    height: 112px;
+
+    white-space: normal;
+    clip-path: none;
+    clip: auto;
+    overflow: visible;
+  }
+
+  .adv-list-item .item-title {
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .adv-list-item .item-text {
+    font-weight: 400;
+  }
+
+  .footer.section .container {
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 0;
+  }
+
+  .footer.section .logo-cont {
+    margin-right: 120px;
+  }
+
+  .footer.section .social-media-footer-cont {
+    margin-right: 80px;
   }
 }
