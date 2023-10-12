@@ -223,15 +223,14 @@ nav .nav-menu .page-link:active {
 /* main-block-styles start*/
 /* introduction-section */
 .introduction-section {
-  max-width: 1440px;
-  padding: 188px 0;
+  padding: 72px 0;
   margin: 0 auto;
 
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/main-section-img/mobile-verison-1st_section-bg.jpg);
+    url(../images/main-section-img/mobile-version-1st-section-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -279,10 +278,6 @@ nav .nav-menu .page-link:active {
   flex-wrap: wrap;
   gap: 72px 24px;
   justify-content: center;
-}
-
-.advantages.section .adv-list .adv-list-item {
-  min-width: 288px;
 }
 
 .adv-list-item .item-title {
@@ -808,6 +803,10 @@ nav .nav-menu .page-link:active {
   width: 100%;
   padding: 72px 24px 40px 16px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   background-color: #ffffff;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -821,7 +820,6 @@ nav .nav-menu .page-link:active {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
 }
 
 .mobile-nav-list .mobile-nav-item {
@@ -840,6 +838,10 @@ nav .nav-menu .page-link:active {
   flex-direction: column;
   gap: 24px;
   margin-bottom: 48px;
+}
+
+.mobile-menu-contacts-list .tel {
+  color: #4d5ae5;
 }
 
 .mobile-menu-contacts-list-item {
@@ -889,6 +891,16 @@ nav .nav-menu .page-link:active {
   }
 }
 
+@media (min-width: 320px) and (min-resolution: 192dpi) {
+  .introduction-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-section-img/mobile-version-1st-section-bg-2x.jpg);
+  }
+}
+
 @media (min-width: 768px) {
   .mobile-nav-menu-container {
     position: absolute;
@@ -916,7 +928,7 @@ nav .nav-menu .page-link:active {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/main-section-img/tablet-verison-1st-section-bg.jpg);
+      url(../images/main-section-img/tablet-version-1st-section-bg.jpg);
     padding: 112px 0;
   }
 
@@ -925,17 +937,21 @@ nav .nav-menu .page-link:active {
   }
 
   .adv-list-item {
-    max-width: 356px;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .adv-list-item .item-title {
+    text-align: start;
   }
 
   .project-card {
-    max-width: 356px;
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   .footer.section .container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 584px;
   }
 
   .footer.section .logo-cont {
@@ -959,6 +975,16 @@ nav .nav-menu .page-link:active {
   }
 }
 
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .introduction-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-section-img/tablet-version-1st-section-bg-2x.jpg);
+  }
+}
+
 @media (min-width: 1158px) {
   .section {
     padding: 120px 0;
@@ -974,6 +1000,7 @@ nav .nav-menu .page-link:active {
   }
 
   .introduction-section {
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1013,6 +1040,11 @@ nav .nav-menu .page-link:active {
     overflow: visible;
   }
 
+  .adv-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    max-width: none;
+  }
+
   .adv-list-item .item-title {
     text-align: start;
     font-size: 20px;
@@ -1023,10 +1055,15 @@ nav .nav-menu .page-link:active {
     font-weight: 400;
   }
 
+  .project-card {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+
   .footer.section .container {
     justify-content: flex-start;
     align-items: baseline;
     gap: 0;
+    width: auto;
   }
 
   .footer.section .logo-cont {
@@ -1035,5 +1072,15 @@ nav .nav-menu .page-link:active {
 
   .footer.section .social-media-footer-cont {
     margin-right: 80px;
+  }
+}
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+  .introduction-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-section-img/1st-section-bg-2x.jpg);
   }
 }
