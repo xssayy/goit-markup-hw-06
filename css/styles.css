@@ -682,6 +682,11 @@ nav .nav-menu .page-link:active {
   margin-bottom: 4px;
 }
 
+.modal-window-label.modal-checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
 .input-cont {
   margin-bottom: 8px;
 }
@@ -797,6 +802,7 @@ nav .nav-menu .page-link:active {
 
 .mobile-menu-window {
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   height: 100vh;
@@ -972,6 +978,10 @@ nav .nav-menu .page-link:active {
 
   .order-service-button {
     margin-top: 36px;
+  }
+
+  .modal-window {
+    width: 408px;
   }
 }
 
